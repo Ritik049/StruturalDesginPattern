@@ -1,0 +1,21 @@
+# Structural Design Pattern: Those patterns which tells how to arrange objects and classes together to form a large object. while keeping these structures flexible and efficient.
+
+
+#ADAPTER : Its helps to communicate incompatiable objects with each other.
+
+#Bridge: Used to split large classes into closely related classes into two separate hierarchies- abstraction and implementation, which can be developed independently each other.
+
+
+#Composite: Lets you compose objects into tree structures, and then work with these structures, as if they were individual objects.
+
+
+# Decorator: Lets you attach new behaviour to objects by placing these objects into special wrapper objects that contain the behaviours.
+
+#FACADE: Provide a simplified  interface to library, a framework, or any other complex  set of classes.
+
+
+#FlyWeight: Lets you fit more objects into the available amount of Ram by sharing common parts of the state between multiple objects instead of keeping all of the data in the object.
+
+
+#Proxy: Lets you provide the  substitute or placeholder, for another objects, A proxy control access to the object , allowing you to perfrom something either before or after,
+ the request gets  through to the original object.
