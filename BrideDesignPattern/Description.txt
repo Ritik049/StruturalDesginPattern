@@ -1,0 +1,21 @@
+Bride Design Pattern: It lets you split large classes into set of closely related classes into two separate hierarchies- Abstraction and Implementation,which can be independently developed of each other.
+
+
+Problem: Suppose we have remote controlling devices TV, Radio, if we make them in one Class then definitiely it will become large class and difficult ot handle
+//AS well as tight coupling create difficulty in future changes.
+
+
+Solution:-
+//So to avoid large classes we make them closely related small classes and use it.
+//And Suppose in future we need to add more functionality to these abstractions then we need to change the whole implementation if they are tightly coupled,
+//So to avoid violation of OCD and SRP we use interfaces.
+
+//Here in bridge pattern we make remote abstraction(inheritance) which take implementation as argument and provide functionality to client. and device interfacee
+
+
+Structure:
+1)Client class which decide which remote implementation need.
+2)Remote class which take (Implementation(concrete)) as argument and adjust value of device accordintly.
+3)Device class which have functionality which normal tv and radio have.
+4)Advanced Remote has mute funcitonality added.
+

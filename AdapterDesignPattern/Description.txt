@@ -1,0 +1,17 @@
+Adapter Design Pattern: It allows objects incompatible to each other to collaborate, 
+
+//Problem:
+//Client needs JSON object but we have XML object providing the same functionality which client wants in JSON.
+
+
+Solution: 
+As both XML object and JSON object are incompatible to each other we need to convert them into compatible  using adapter for client.
+//XML goes into adapter and this adapter return JSON object.
+
+//Structure
+1) Client ->This provide client to  use adpater with given XML object, pass as argument.
+2) Interface->Adapter ->This provide the base method which different adapter uses.
+3)Adapter -> It is a concrete implementation of Interface Adapter which takes XML object as argument.
+It returns the object which client wants, suppose client want .xlx so we can make accordingly.
+
+
