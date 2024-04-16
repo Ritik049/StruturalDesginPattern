@@ -1,0 +1,30 @@
+Composite Pattern: It lets you to compose objects in tree structure and work with these structures as if they were individual object.
+
+//Ex. Suppose we order an an electronic kit of  mobile so the hierarchy will be
+//Box, --> Cutter and box(Again)
+//BoxAgain--> Reciept and box(Again)
+//BoxAgain-->Mobile and box(Again)
+//BoxAgain -->headphone and box(Again)
+//BoxAgain -->charger.
+
+These are forming a tree like structure, and we can use composite as individual unit.
+
+//structure:
+1)Component Interface  which get implemented by Composite and Leaf class
+2)Composite has add, remove functionality along with get() so that it can return leaf,--->DELEGATE ALL work to children
+3)leaf is only to perfrom single functionality.----->DO some work
+
+EXAMPLE , file and directory, As directory is composite, file is interface and leaf.
+
+and here we got the tree like structure. 
+
+
+//HERe SEE size, we can directly access size we not go to every File and find size individually , we just call to composite Dir2 for size (itself and it return its size);
+
+
+
+//NEED of composite Pattern
+//Suppose you are preparing order of ecommerce company where you have to prepare for all the eclectronic devices,
+Suppose you take a box and picking randomly electronic objects in box now at some point of time you need ot calculate the mobile items(mobile, charger, headphones)
+//So what you do you run for loop for whole box and first find category and then find price, this will take more time.
+//So the efficient approach is to maintain them in boxes, and suppose you want mobile items, so pick mobile box, and just do getPrice();
