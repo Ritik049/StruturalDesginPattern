@@ -1,0 +1,23 @@
+FlyWeight Design Pattern: This pattern helps to use more objects in available amount of RAM ,by sharing the common  parts of state between  multiple objects instead of keeping all data in one objects
+
+Example
+Problem:-> Suppose we have a kind of civilisation game where we need to make millions of trees, 
+//As we make trees their cordinates are different but there type may be same like (name,color,texture)
+IF everytime we make new tree with these same data, then it will consume lots of memory.
+
+//Now another way we can make already type class and make type object with initialsiing this (name,color,texture) and pass in tree
+//so tree object points to same type object for some of trees have same type(name,color,texture);
+
+//But this method will become clumsy when we need to make thousands of trees , as if suppose we make trees of type1 then make type2......type100,
+//Again we need to make treee of type1, but you will forget what is of type1, so this is not good at user end.
+
+
+//To solve this problem of saving amount of Ram we use FlyWeight pattern
+
+Structure:-
+//FlyWeightFactory:--> TreeFactory: Which makes and do track of type entered, 
+//TreeType:-->accetps  the arguments and make Type object.
+//Tree:->accepts argument x,y, and type;
+//Forest:-> have function plantTree along with have list to keep track of trees and have draw function to draw Forest
+
+//Remember here first we make forest then we draw it.
