@@ -1,0 +1,21 @@
+This pattern allows you to add behaviours to the objects by wrapping these objects in wrapper class
+
+Example: Suppose you are making android phone for company, where you need to add on features,
+simultaneously,
+Suppose A1, A2, A3 phone, where A1 required f1 A2 required f2 and A3 required f1 and f3 both,
+
+If we make normal inheritance we often end up with making 3 classes,
+
+But if we use composition/aggregation, this will not be a case,
+
+To avoid this making large no. of clases we need to make  component interface, from where,
+we inherit, concrete Component, and Decorator(Decorator is the wrapper object which act as component itself as it extends from same class component);
+
+
+//Structure:
+1)Component interface/abstract class for core features,-->Mobile have features, memory, display, call ,messaging
+2)ConcreteComponent  : Android having features, Implementation
+3)Decorator: Interface/Abstract having setFeature(Component c)
+4)Concrete Decorator: Have implementation of setFeature.
+
+
