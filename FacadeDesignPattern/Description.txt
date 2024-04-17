@@ -1,0 +1,9 @@
+Facade Design Pattern: Provide a simplified, interface, library, or framework or any other complex set of classes.
+It is actually a tradeoff between functionality and simplicity.
+
+Problem: When we need to work with many classes  together, suppose we make them separate and in Client.java we are giving them instructions,
+but using these classes and their code make our client.java clumsy and writing that code every time may lead to forget user something usage.
+
+//SO FACADE provides a interface/library/framework so user just need to use that framework and put arguments accordingly and we just need to use facade and just put arguments as per our need.
+
+//"FACADE pattern provides a simplified interface which hides the complexities of interacting multiple subsystems, making it easier to understand."
