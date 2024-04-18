@@ -1,0 +1,13 @@
+*Proxy Desing Pattern: -Lets you provide a substitue or placeholder for another object.
+A proxy controls access to original objects by allowing you to perform something after and before going through the service request.
+
+
+Ex. Youtube library: Instead of making list every time for the videos which you have selected, it takes time to fetch the details, so we will use kind a caching mechanism
+,through which a kind of copy is present to us and we simply use it.
+
+
+Structure:
+1)thirdPartyYouTubeLib: Interface has list of videos, videoInfo and download;   (as video get access by ID so we use Map)
+2)thirdPartyYouTubeClass: Concerte class of thirdPartyYouTubeLib   //this is actual service;
+3)cachedYouTubeClass: It is proxy class for thirdPartyYouTubeClass implement same interface as thirdPartyYouTubeLib
+4)youTubeManager: this manages to how to make calls  for getting a better GUI.
